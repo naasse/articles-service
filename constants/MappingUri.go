@@ -4,6 +4,6 @@ package constants
 const (
     RootUri = "/articles"
     GetArticlesSegment = "/articles"
-    GetArticlesFullUri = RootUri + GetArticlesSegment
+    GetArticlesUri = RootUri + GetArticlesSegment
 )
 

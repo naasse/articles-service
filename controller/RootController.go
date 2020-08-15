@@ -11,7 +11,7 @@ import (
 // Handle requests to the root endpoint
 func GetRoot(w http.ResponseWriter, r *http.Request) {
     links := []restReps.Link {
-        restReps.Link{Rel: articlesReps.GetArticlesRel, Method: http.MethodGet, Uri: constants.GetArticlesFullUri + "/"},
+        restReps.Link{Rel: articlesReps.GetArticlesRel, Method: http.MethodGet, Uri: constants.GetArticlesUri + "/"},
     }
     api := restReps.Api{Links: links}
     json.NewEncoder(w).Encode(api)
